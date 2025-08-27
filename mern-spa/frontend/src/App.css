@@ -1,0 +1,131 @@
+/* Page background */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  background-color: #f0f2f5; /* light gray */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container card */
+.container {
+  max-width: 55%;
+  margin: 60px auto;
+  padding: 25px 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Heading with blue underline */
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #222;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.container h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #4da6ff; /* blue underline */
+  margin: 0 auto;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Form inputs */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1.8px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4da6ff;
+  outline: none;
+}
+
+/* Add button */
+button[type="submit"] {
+  background-color: #4da6ff; /* same blue */
+  color: white;
+  font-weight: 600;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 150px;
+  align-self: center; /* center the button */
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3990e0;
+}
+
+/* User list table styling (reuse previous style or customize as needed) */
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.user-list th, .user-list td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.user-list th {
+  background-color: #f4f6fb;
+  font-weight: 600;
+  color: #444;
+}
+
+.user-list tbody tr:hover {
+  background-color: #f9faff;
+}
+
+.user-list button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+}
+
+.user-list .edit-btn {
+  background-color: #f0ad4e;
+}
+
+.user-list .edit-btn:hover {
+  background-color: #ec9a00;
+}
+
+.user-list .delete-btn {
+  background-color: #d9534f;
+}
+
+.user-list .delete-btn:hover {
+  background-color: #c9302c;
+}
